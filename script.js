@@ -32,7 +32,7 @@ function tocarOuPausar(){
 }
 
 function trocarNomeDaFaixa(){
-    nomeCapitulo.innerText = 'Capitulo ' + capituloAtual;
+    nomeCapitulo.innerText = `Capitulo ' ${capituloAtual}`;
 }
 
 function proximaFaixa(){
@@ -42,7 +42,7 @@ function proximaFaixa(){
         capituloAtual = capituloAtual + 1 ; 
     }
 
-    audioCapitulo.src = './books/' + capituloAtual + '.mp3'
+    audioCapitulo.src = `./books/${capituloAtual}.mp3`
     tocarFaixa();
     taTocando = 1; 
     trocarNomeDaFaixa();
@@ -55,7 +55,7 @@ function voltarFaixa(){
         capituloAtual = capituloAtual - 1 ; 
     }
 
-    audioCapitulo.src = './books/' + capituloAtual + '.mp3'
+    audioCapitulo.src = `./books/${capituloAtual}.mp3`
     tocarFaixa();
     taTocando = 1; 
     trocarNomeDaFaixa();
